@@ -51,9 +51,47 @@
     a:hover {
       cursor: pointer;
     }
+
+    .hight-contrast {
+      filter: invert(1);
+    }
   </style>
 
   <body class="has-loading-screen links-hover-effect" data-spy="scroll" data-target=".navigation">
+    <!-- <script>
+      window.interdeal = {
+        sitekey: '9e49ba2abc4c9a73779e26483b1ab37e',
+        Position: 'Left',
+        domains: {
+          js: 'https://cdn.equalweb.com/',
+          acc: 'https://access.equalweb.com/',
+        },
+        Menulang: 'EN',
+        btnStyle: {
+          vPosition: ['80%', '80%'],
+          scale: ['0.6', '0.5'],
+          color: {
+            main: '#1c4bb6',
+            second: '#ffffff',
+          },
+          icon: {
+            outline: false,
+            type: 1,
+            shape: 'circle',
+          },
+        },
+      };
+      (function (doc, head, body) {
+        var coreCall = doc.createElement('script');
+        coreCall.src = interdeal.domains.js + 'core/5.0.8/accessibility.js';
+        coreCall.defer = true;
+        coreCall.integrity = 'sha512-DL4HncZs4SCAd8KqE2GWIK5NNVuoXkdhiYOwOy8/9ZKNyYN48XNdS3peJ22GmNR1AnHJuFHEtdFMgCEDONyKWQ==';
+        coreCall.crossOrigin = 'anonymous';
+        coreCall.setAttribute('data-cfasync', true);
+        body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+      })(document, document.head, document.body);
+    </script> -->
+
     <div class="page-wrapper" id="page-top">
       <header id="page-header">
         <nav class="navigation background-is-dark">
@@ -1058,8 +1096,10 @@
             .then(json => success(json.country))
             .catch(() => success('gb'));
         },
-        utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js', // for formatting/validation etc.
+        utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
       });
     </script>
+
+    <script src="https://dash.accessiblyapp.com/widget/ad6ec1a9-853a-4cc5-b22d-8535e5314fed/autoload.js"></script>
   </body>
 </html>
